@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+       <div class="container">
+            <div class="main-header">
+                <img src="svg/nerds-logo.svg" alt="" class="main-header__logo">
+                <nav class="nav main-header__nav">
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">Студия</a>
+                        </li>
+                        <li>
+                            <a href="">Клиенты</a>
+                        </li>
+                        <li class="menu__main">
+                            <a href="index-catalog.html">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="basket">Корзина</a>
+            </div>
+            <h2 class="main-header__title">Магазин готовых шаблонов</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="catalog">
+            <section class="catalog__filter">
+                <form action="#" method="get" class="filter">
+                    <fieldset class="filter__field">
+                        <legend class="filter__legend">Стоимость:</legend>
+                        <section class="range">
+                            <div class="range__for-track">
+                                <div class="range__track">
+                                    <div class="range__track range__track--value">
+
+                                    </div>
+                                    <button class="range__btn range__btn--from" type="button">
+                                    </button>
+                                    <button class="range__btn range__btn--to" type="button">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="range__outputs">
+                                <label class="range__label">
+                                    <b>ОТ</b>
+                                    <input type="text" name="cost-form" class="range__output" value="0">     
+                                </label>
+                                <label class="range__label">
+                                    <b>ДО</b>
+                                    <input type="text" name="cost-form" class="range__output" value="15000">  
+                                </label>
+                            </div>
+                        </section>
+                    </fieldset>
+                    <fieldset class="filter__field filter-field--cost">
+                        <legend class="filter__legend">Сетка:</legend>
+                        <label class="radio">
+                            <input type="radio" name="grid" value="adaptive">
+                            <span class="radio__label"></span>
+                                Адаптивная
+                            
+                        </label>
+                         <label class="radio">
+                            <input type="radio" name="grid" value="adaptive" checked>
+                            <span class="radio__label"></span>
+                                Фиксированная
+                            
+                        </label>
+                         <label class="radio">
+                            <input type="radio" name="grid" value="adaptive">
+                            <span class="radio__label"></span>
+                                Резиновая
+                            
+                        </label>
+                    </fieldset>
+                    <fieldset class="filter__field">
+                        <fieldset class="filter__field filter-field--cost">
+                        <legend class="filter__legend">Особенности:
+                        </legend>
+                        <label class="radio">
+                            <input type="radio" name="grid" value="adaptive" class="radio_special-input" checked>
+                            <span class="radio_special-input__checkbox"></span>
+                            Слайдер
+                        </label>
+                         <label class="radio">
+                            <input type="radio" name="grid" value="adaptive" class="radio_special-input">
+                            <span class="radio_special-input__checkbox"></span>
+                            Слайдер
+                        </label>
+                         <label class="radio">
+                            <input type="radio" name="grid" value="adaptive"  class="radio_special-input">
+                            <span class="radio_special-input__checkbox"></span>
+                            Слайдер
+                        </label>
+                         <label class="radio">
+                            <input type="radio" name="grid" value="adaptive" class="radio_special-input">
+                            <span class="radio_special-input__checkbox"></span>
+                            Слайдер
+                        </label>
+                        </fieldset>
+                    </fieldset>
+                    <button class="btn filter__btn">Показать</button>
+                </form>
+            </section>
+            <section class="catalog__cards">
+                <div class="searching">
+                    <section class="sorting">
+                        <h2>Сортировать:</h2>
+                        <ul class="sorting__list">
+                            <li class="sorting__item">По цене</li>
+                            <li class="sorting__item">По типу</li>
+                            <li class="sorting__item">По названию</li>
+                        </ul>
+                        
+                        <ul class="sorting__arrows">
+                            <li class="sorting__arrows__item">
+                                
+                                <a href="#" class="sorting-arrows__link sorting-arrows__link--down">
+                                    <span class="sorting__arrows-down"></span>
+                                </a>
+                            </li>
+                            <li class="sorting__arrows__item">
+                                
+                                <a href="#" class="sorting-arrows__link sorting-arrows__link--up">
+                                    <span class="sorting__arrows-up"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </section>
+                </div>
+                <section class="cards">
+                    <article class="card card-browser">
+                        <img src="img/sedona-card.png" alt="">
+                        <div class="card__inner">
+                            <div class="card__info">
+                                <h3 class="card__name">Sedona</h3>
+                                 <p class="card__description">Информационный сайт для туристов</p>
+                                <div class="card__btn btn">
+                                    <a href="#" class="card__btn"> 9 900 руб</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                     <article class="card card-browser holder">
+                        <img src="img/pink-card.png" alt="">
+                        <div class="card__inner">
+                            <div class="card__info block">
+                                <h3 class="card__name">Zagolovok</h3>
+                                 <p class="card__description">Информационный сайт для туристов</p>
+                                <div class="card__btn btn">
+                                    <a href="#" class="card__btn"> 9 900 руб</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                     <article class="card card-browser">
+                        <img src="img/barbershop-card.png" alt="">
+                        <div class="card__inner">
+                            <div class="card__info">
+                                <h3 class="card__name">Zagolovok</h3>
+                                <p class="card__description">Информационный сайт для туристов</p>
+                                <div class="card__btn btn">
+                                    <a href="#" class="card__btn"> 9 900 руб</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                     <article class="card card-browser">
+                        <img src="img/mishka-card.png" alt="">
+                        <div class="card__inner">
+                            <div class="card__info">
+                                <h3 class="card__name">Zagolovok</h3>
+                                 <p class="card__description">Информационный сайт для туристов</p>
+                                <div class="card__btn btn">
+                                    <a href="#" class="card__btn"> 9 900 руб</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                     <article class="card card-browser">
+                        <img src="img/aplus-card.png" alt="">
+                        <div class="card__inner">
+                            <div class="card__info">
+                                <h3 class="card__name">Zagolovok</h3>
+                                <p class="card__description">Информационный сайт для туристов</p>
+                                <div class="card__btn btn">
+                                    <a href="#" class="card__btn"> 9 900 руб</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                     <article class="card card-browser">
+                        <img src="img/kvast-card.png" alt="">
+                        <div class="card__inner">
+                            <div class="card__info">
+                                <h3 class="card__name">Zagolovok</h3>
+                                 <p class="card__description">Информационный сайт для туристов</p>
+                                <div class="card__btn btn">
+                                    <a href="#" class="card__btn"> 9 900 руб</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <ul class="pagination">
+                    <li class="pagination__item pagination__item--active">
+                        <a href="#" class="pagination_link">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination_link">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination_link">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination_link pagination_link--next">Следующая</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+<div class="map-catalog">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1551551437583" width="100%" height="418" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="container">
+    <div class="social-media">
+        <ul class="examples__list">
+            <li class="examples__item social-media__item">
+                <a href="#" class="icon-vk">
+                    
+                </a>
+            </li>
+            <li class="examples__item social-media__item">
+                <a href="#" class="icon-fb">
+            
+                </a>
+            </li>
+            <li class="examples__item social-media__item">
+                <a href="#" class="icon-inst">
+                    
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="proposition">
+        <h3>Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+    </div>
+</div>
+</body>
+</html>
