@@ -549,12 +549,12 @@ header {
 
 .radio input:checked + .radio__label{
     background-image: url(../svg/radio-on.svg);
-    opacity: 0.99
+    opacity: 0.99;
 }
 
 .radio_special-input__checkbox {
     background-image: url(../svg/checkbox-off.svg);
-    width: 1.55em;
+    width: 1.47em;
     height: 1.5em;
     position: absolute;
     margin-left: -2em;
@@ -564,6 +564,7 @@ header {
 .radio_special-input:checked + .radio_special-input__checkbox {
     background-image: url(../svg/checkbox-on.svg);
     opacity: 0.99;
+    width: 1.60em;
 }
 
 .filter__btn {
