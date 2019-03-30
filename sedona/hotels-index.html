@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotels</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div  class="container">
+    <header>
+        <nav class="header__navigation">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="index.html" class="header__link">Информация</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Фото и видео</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Карта штата</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-logo__wraper">
+            <a href="header-logo__picture">
+                <img src="img/header-logo.png" alt="" width="186" height="94">
+            </a>
+        </div>
+    </header>
+    <main>
+       <div class="background-wrapper">
+        <div class="filter-wrapper container-wrapper ">
+            <fieldset class="filter">
+                <legend class="filter__legend">Инфраструктура</legend>
+                <label class="radio">
+                    <input type="radio" name="grid" value="adaptive" class="radio_special-input" checked="">
+                    <span class="radio_special-input__checkbox"></span>
+                    Бассейн
+                </label>
+                <label class="radio">
+                    <input type="radio" name="grid" value="adaptive" class="radio_special-input" checked="">
+                    <span class="radio_special-input__checkbox"></span>
+                    Парковка
+                </label>
+                <label class="radio">
+                    <input type="radio" name="grid" value="adaptive" class="radio_special-input" checked="">
+                    <span class="radio_special-input__checkbox"></span>
+                    Wi-Fi
+                </label>
+            </fieldset>
+            <fieldset class="filter">
+                <legend class="filter__legend">Тип Жилья</legend>
+                <label class="radio">
+                    <input type="radio" name="grid" value="adaptive" class="radio_special-input" checked="">
+                    <span class="radio_special-input__checkbox"></span>
+                    Гостиница
+                </label>
+                <label class="radio">
+                    <input type="radio" name="grid" value="adaptive" class="radio_special-input" checked="">
+                    <span class="radio_special-input__checkbox"></span>
+                    Мотель
+                </label>
+                <label class="radio">
+                    <input type="radio" name="grid" value="adaptive" class="radio_special-input" checked="">
+                    <span class="radio_special-input__checkbox"></span>
+                    Апартаменты
+                </label>
+            </fieldset>
+            <fieldset class="filter">
+                <legend class="filter__legend">Стоимость в сутки</legend>
+                <section class="range">
+                   <div class="range__outputs">
+                        <label class="range__label range__label--zombie">
+                            <input type="text" name="cost-form" class="range__output" value="0">
+                        </label>
+                        <label class="range__label">
+                            <input type="text" name="cost-form" class="range__output" value="30000">
+                        </label>
+                    </div>
+                    <div class="range__for-track">
+                        <div class="range__track">
+                            <div class="range__track range__track--value">       
+                            </div>
+                            <button class="range__btn range__btn--from"></button>
+                            <button class="range__btn range__btn--to"></button>
+                        </div> 
+                    </div>
+                </section>
+            </fieldset>
+        </div>
+    </div>
+        <div class="catalog container-wrapper">
+            <div class="catalog-navigation">
+                <div class="catalog__results">
+                    Найдено:
+                    <span class="catalog__results-count" id="results-count">3</span>
+                </div>
+                <nav class="catalog-navigation__main">
+                    <ul class="catalog-navigation__list">
+                        <li class="catalog-navigation__item">
+                            Сортировка
+                        </li>
+                        <li class="catalog-navigation__item">
+                            <a href="#" class="catalog-navigation__link">По цене</a>
+                        </li>
+                        <li class="catalog-navigation__item">
+                            <a href="#" class="catalog-navigation__link">По типу</a>
+                        </li>
+                        <li class="catalog-navigation__item">
+                            <a href="#" class="catalog-navigation__link">По рейтингу</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="catalog-navigation__main">
+                    <ul class="catalog-navigation__list">
+                        <li class="catalog-navigation__item">
+                            <a href="#" class="catalog-navigation__link">стрелочка вверх</a>
+                        </li>
+                        <li class="catalog-navigation__item">
+                            <a href="#" class="catalog-navigation__link">Стрелочка вниз</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="catalog-tiles">
+                <div class="catalog-tile">
+                    <div class="catalog-tile__image">
+                        <img src="img/amara-resort.png" alt="">
+                    </div>
+                    <div class="catalog-tile__info">
+                       <h2>Название отеля</h2>
+                       <div class="catalog-tile__info__item"> 
+                           <span>Гостиница</span>
+                           <span>от 4000 Р.</span>
+                       </div>
+                       <div class="catalog-tile__info__item">
+                           <a href="#">Подробнее</a>
+                           <a href="#">Забронировать</a>
+                       </div>
+                    </div>
+                    <div class="catalog-tile__rating">
+                        <div class="catalog-tile__rating__stars">
+                            <span><img src="svg/star.svg" alt=""></span>
+                            <span><img src="svg/star.svg" alt=""></span>
+                            <span><img src="svg/star.svg" alt=""></span>
+                            <span><img src="svg/star.svg" alt=""></span>
+                            <span><img src="svg/star.svg" alt=""></span>
+                        </div>
+                        <div class="catalog-tile__rating__score">
+                            <p>Рейтинг 8.5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-tile">
+                    <div class="catalog-tile__image">
+                        <img src="img/desert-quail.png" alt="">
+                    </div>
+                    <div class="catalog-tile__info">
+                       <h2>Название отеля</h2> 
+                       <div class="catalog-tile__info__item"> 
+                           <span>Гостиница</span>
+                           <span>от 4000 Р.</span>
+                       </div>
+                       <div class="catalog-tile__info__item">
+                           <a href="#">Подробнее</a>
+                           <a href="#">Забронировать</a>
+                       </div>
+                    </div>
+                    <div class="catalog-tile__rating">
+                        <div class="catalog-tile__rating__stars">
+                            <span><img src="svg/star.svg" alt=""></span>
+                            <span><img src="svg/star.svg" alt=""></span>
+                            <span><img src="svg/star.svg" alt=""></span>
+                        </div>
+                        <div class="catalog-tile__rating__score">
+                            <p>Рейтинг 8.9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-tile">
+                    <div class="catalog-tile__image">
+                        <img src="img/villas-at-poco.png" alt="">
+                    </div>
+                    <div class="catalog-tile__info">
+                       <h2>Название отеля</h2> 
+                       <div class="catalog-tile__info__item"> 
+                           <span>Гостиница</span>
+                           <span>от 4000 Р.</span>
+                       </div>
+                       <div class="catalog-tile__info__item">
+                           <a href="#">Подробнее</a>
+                           <a href="#" class="catalog-tile__info__item-link">Забронировать</a>
+                       </div>
+                    </div>
+                    <div class="catalog-tile__rating">
+                        <div class="catalog-tile__rating__stars">
+                            <span><img src="svg/star.svg" alt=""></span>
+                            <span><img src="svg/star.svg" alt=""></span>
+                        </div>
+                        <div class="catalog-tile__rating__score">
+                            <p>Рейтинг 9.2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+       <div class="footer">
+            <div class="footer__hashtag">
+                <h3>#visitsedona</h3>
+            </div>
+            <div class="footer__social-media">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a class="footer__list-link footer__list-link--twitter" href="#">
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link footer__list-link--facebook" href="#">
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link footer__list-link--youtube" href="#">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__academy-logo">
+               <a href="#" class="footer__academy-logo__link">
+                   <img src="svg/logo-htmlacademy.svg" alt="" class="footer__academy-logo__image">
+               </a> 
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
