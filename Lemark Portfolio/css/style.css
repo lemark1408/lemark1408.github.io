@@ -1,0 +1,257 @@
+body {
+    background-color: #1F1F1F;
+    color: #E8F2F1;
+    font-family: 'Poiret One', cursive;
+    margin: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poiret One', cursive;
+    color: inherit;
+    text-align: center;
+}
+
+.container {
+    width: 940px;
+    margin: auto;
+}
+
+.header {
+    margin-top: 150px;
+}
+
+.header__navigation {
+    text-align: center;
+}
+
+.header__item {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.main-page {
+    border-bottom: 2px solid #E8F2F1;
+}
+
+.header__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #E8F2F1;
+    font-size: 25px;
+}
+
+.header__link:hover {
+    border-bottom: 2px solid #E8F2F1;
+}
+
+.greeting {
+    position: relative;
+}
+
+.greeting::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 1px;
+    background-color: #FFFAF5;
+    top: -10px;
+    z-index: -3;
+    animation: 5s cube forwards;
+}
+
+
+
+.greeting__text {
+    margin-top: 100px;
+    font-size: 30px;
+    color: #1F1F1F;
+    padding: 20px 0px;
+    z-index: 1;
+}
+
+.showcase {
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.catalog {
+    display: flex;
+}
+
+.catalog__item {
+    display: inline-block;
+    border: 2px solid white;
+    width: 300px;
+    height: 320px;
+    margin: 0px 15px;
+    background-size: contain;
+    transition: 1s;
+    position: relative;
+}
+
+.catalog__item:hover {
+    border: 1px solid ##1F1F1F;
+}
+
+.catalog__description {
+    display: block;
+    position: absolute;
+    top: 25%;
+    padding: 20px;
+    color: #1F1F1F;
+    background-color: #FFFAF5;
+    transition: 1s;
+    opacity: 0;
+}
+
+.catalog__item--technomart {
+    background-image: url(../img/technomart-index.jpg);
+    
+}
+
+.catalog__item--nerds {
+    background-image: url(../img/nerds.jpg);
+}
+
+.catalog__item--sedona {
+    background-image: url(../img/sedona.jpg);
+}
+
+
+
+.catalog__item:hover {
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(255,250,245,1);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(255,250,245,1);
+    box-shadow: 0px 0px 20px 5px rgba(255,250,245,1);
+}
+
+.catalog__item--technomart:hover {
+    background-image: url(../img/technomart-index2.jpg)
+}
+
+.catalog__item--nerds:hover {
+    background-image: url(../img/nerds-blur.jpg);
+    
+}
+
+.catalog__item--sedona:hover {
+    background-image: url(../img/sedona-blur.jpg);
+}
+
+.catalog__item:hover  .catalog__description {
+    opacity: 1;
+}
+
+.self-discription p {
+    font-size: 17px;
+}
+
+.myself {
+    border-radius: 50%;
+    width: 400px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer__item {
+    display: inline-block;
+    background-color: #FFFAF5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.footer__link {
+    width: 30px;
+    height: 30px;
+    top: 20%;
+    position: relative;
+}
+
+.footer__link--github::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-position: 1px -8px;
+    background-image: url(../img/github.png);
+    background-repeat: no-repeat;
+}
+
+.footer__link--linkedin::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-position: 2px -15px;
+    background-image: url(../img/linkedin.png);
+    background-repeat: no-repeat;
+}
+
+.footer__link--telegram::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-position: 0px -6px;
+    background-image: url(../img/telegram.png);
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+  .block-animation {
+          width: 130px;
+          height: 130px;
+          background-color: #2196F3;
+transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms;
+        }
+        
+        .block-animation:hover {
+          width: 1230px;
+        }
+
+
+
+.box-animation {
+    position: relative;
+}
+
+/*
+.animation-my {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    animation: 5s cube forwards;
+}
+
+*/
+
+@keyframes cube {
+    0%{}
+    50%{}
+    100%{width: 90%}
+} 
+
+
+
+
+
+
+
+
+
